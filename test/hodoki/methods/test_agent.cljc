@@ -3,7 +3,7 @@
   Offline: G5 charter scan, G6 f-gas, G8 ECU wipe + witness, G12 part DID, G13 recovery/ASR, G14
   PGM yield, settlement + 9 handlers."
   (:require [clojure.test :refer [deftest is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [hodoki.methods.agent :as agent]))
 
 (deftest test-charter-scan-passes-civilian

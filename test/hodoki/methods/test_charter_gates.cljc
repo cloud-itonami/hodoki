@@ -2,7 +2,7 @@
   "hodoki — constitutional-gate conformance tests against canonical EDN."
   (:require [clojure.test :refer [deftest is run-tests]]
             [clojure.edn :as edn]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 (def ^:private actor-dir (java.io.File. "."))
 (def ^:private lexdir (java.io.File. actor-dir "data/lex"))
@@ -33,9 +33,9 @@
 (deftest test-civilian-only-no-military-aerospace
   (let [ng (get (manifest) "nonGoals")
         n (get ng "goals" (get ng "nonGoals" ng))]
-    (is (str/includes? (str/lower-case (get n "N1")) "military") "N1 must exclude military vehicles")
-    (is (or (str/includes? (str/lower-case (get n "N2")) "aerospace")
-            (str/includes? (str/lower-case (get n "N2")) "aircraft")) "N2 must exclude aerospace vehicles")))
+    (is (str/includes? (str/lower (get n "N1")) "military") "N1 must exclude military vehicles")
+    (is (or (str/includes? (str/lower (get n "N2")) "aerospace")
+            (str/includes? (str/lower (get n "N2")) "aircraft")) "N2 must exclude aerospace vehicles")))
 
 ;; ── G8 (CONSTITUTIONAL FIRST) — mandatory data wipe before disassembly ──
 (deftest test-g8-data-wipe-attestation
