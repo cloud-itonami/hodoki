@@ -4,7 +4,7 @@
   capture, G8 ECU-data-wipe mandatory + witness ≥2, G12 right-to-repair part DID, G13 material
   recovery ≥95% / ASR <5%, G14 PGM recovery ≥95%, S2/S3 USDC + 10% tithe (stops at :intent). Pure
   compute; the Murakumo llm host binding is unused here (the omitted leg)."
-  (:require [clojure.string :as str])
+  (:require [kotoba.lang.text :as str])
   (:import [java.security MessageDigest]))
 
 (def TITHE-BPS 1000)
@@ -20,7 +20,7 @@
 (defn scan-charter-compliance
   "G5 Charter §2(a-h) scan: reject military/weapon-carrying vehicles."
   [_vin vehicle-desc]
-  (let [low (str/lower-case vehicle-desc)
+  (let [low (str/lower vehicle-desc)
         hits (filterv #(str/includes? low %) PROHIBITED-PATTERNS)]
     (if (seq hits)
       {"ok" false "reason" (str "Charter violation: " (py-list-repr hits) " (G5)") "status" "failed"}
