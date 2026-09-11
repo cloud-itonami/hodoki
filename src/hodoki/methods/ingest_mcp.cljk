@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; hodoki 解き — ingest canonical seed.edn into a live kotoba node.
 ;; ADR-2605261215.
 (ns hodoki.kotoba.ingest-mcp
