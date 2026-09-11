@@ -9,9 +9,9 @@ right-to-repair gates.
 | Lexicons | ✅ 8 Datomic-native definitions plus 8 canonical EDN imports of the central wire contracts in `data/lex/` |
 | Cells | 🟡 9 R0 declarations in `data/cells/`; social state-machine CLJC in `src/hodoki/cells/` |
 | Manifest | ✅ canonical `manifest.edn`; JSON-LD mirror in `wire/manifest.jsonld` |
-| Tests | ✅ 43 tests / 90 assertions via `clojure -M -m hodoki.test-runner` |
+| Tests | ✅ 43 tests / 90 assertions via `kbb -M -m hodoki.test-runner` |
 | Methods | 🟡 agent, social, and MCP ingestion CLJC; physical disassembly remains R1 |
-| Policy audit | ✅ canonical EDN parse, wire boundary, and deprecated-language checks via `bb scripts/audit.cljk` |
+| Policy audit | ✅ canonical EDN parse, wire boundary, and deprecated-language checks via `kbb scripts/audit.cljk` |
 
 ## Substrate-native status
 

@@ -13,7 +13,7 @@
 - `wire/` contains JSON/JSON-LD interoperability mirrors only.
 - Python, Go/TinyGo, and legacy deployment shell implementations are deprecated and absent.
 
-Run `clojure -M -m hodoki.test-runner` and `bb scripts/audit.cljk` before publishing.
+Run `kbb -M -m hodoki.test-runner` and `kbb scripts/audit.cljk` before publishing.
 
 ## Overview
 
