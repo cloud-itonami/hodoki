@@ -11,7 +11,7 @@ right-to-repair gates.
 | Manifest | ✅ canonical `manifest.edn`; JSON-LD mirror in `wire/manifest.jsonld` |
 | Tests | ✅ 43 tests / 90 assertions via `clojure -M -m hodoki.test-runner` |
 | Methods | 🟡 agent, social, and MCP ingestion CLJC; physical disassembly remains R1 |
-| Policy audit | ✅ canonical EDN parse, wire boundary, and deprecated-language checks via `bb scripts/audit.clj` |
+| Policy audit | ✅ canonical EDN parse, wire boundary, and deprecated-language checks via `bb scripts/audit.cljk` |
 
 ## Substrate-native status
 
