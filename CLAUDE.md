@@ -167,7 +167,7 @@ Deployment remains disabled until the R1 ADR activation.
 
 ```bash
 clojure -M -m hodoki.test-runner
-bb scripts/audit.clj
+bb scripts/audit.cljk
 ```
 
 The audit enforces EDN as canonical data, confines JSON/JSON-LD to `wire/`, and rejects deprecated Python, Go/TinyGo, requirements, and shell artifacts.
