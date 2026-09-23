@@ -1,7 +1,7 @@
 (ns hodoki.methods.test-charter-gates
   "hodoki — constitutional-gate conformance tests against canonical EDN."
   (:require [kotoba.test :refer [deftest is run-tests]]
-            [clojure.edn :as edn]
+            [kotoba.lang.edn :as edn]
             [kotoba.lang.text :as str]))
 
 (def ^:private actor-dir (java.io.File. "."))
