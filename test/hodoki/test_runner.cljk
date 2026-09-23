@@ -1,5 +1,5 @@
 (ns hodoki.test-runner
-  (:require [clojure.test :as test]
+  (:require [kotoba.test :as test]
             [hodoki.methods.test-agent]
             [hodoki.methods.test-charter-gates]
             [hodoki.murakumo-test]))

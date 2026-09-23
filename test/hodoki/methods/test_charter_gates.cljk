@@ -1,6 +1,6 @@
 (ns hodoki.methods.test-charter-gates
   "hodoki — constitutional-gate conformance tests against canonical EDN."
-  (:require [clojure.test :refer [deftest is run-tests]]
+  (:require [kotoba.test :refer [deftest is run-tests]]
             [clojure.edn :as edn]
             [kotoba.lang.text :as str]))
 
