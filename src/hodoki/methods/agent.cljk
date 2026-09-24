@@ -4,7 +4,7 @@
   capture, G8 ECU-data-wipe mandatory + witness ≥2, G12 right-to-repair part DID, G13 material
   recovery ≥95% / ASR <5%, G14 PGM recovery ≥95%, S2/S3 USDC + 10% tithe (stops at :intent). Pure
   compute; the Murakumo llm host binding is unused here (the omitted leg)."
-  (:require [kotoba.lang.text :as str])
+  (:require [kotoba.bytes :as kbytes] [kotoba.lang.text :as str])
   (:import [java.security MessageDigest]))
 
 (def TITHE-BPS 1000)
@@ -47,7 +47,7 @@
   "G12 Issue DID for harvested part (IPFS-pinned, VIN-provenanced)."
   [vin part-name]
   (let [md (MessageDigest/getInstance "SHA-256")
-        bs (.digest md (.getBytes (str vin ":" part-name) "UTF-8"))
+        bs (.digest md (kbytes/utf8-bytes (str vin ":" part-name)))
         hex (apply str (map #(format "%02x" (bit-and % 0xff)) bs))]
     (str "did:web:hodoki.etzhayyim.com:part:" (subs hex 0 16))))
 
