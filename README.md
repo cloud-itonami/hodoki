@@ -134,4 +134,4 @@ Schema details deferred to R1 ADR.
 - `/orgs/etzhayyim/com-etzhayyim-kanayama/README.md` — downstream metals consumer + G2 pattern inheritance
 - `/orgs/etzhayyim/com-etzhayyim-makura/README.md` — downstream seat-foam consumer + G13 invariant closure
 - `/orgs/etzhayyim/com-etzhayyim-wadachi/README.md` — vehicle build-side sibling
-- `/CLAUDE.md` — Religious-corp status table row 53
+- `/AGENTS.md` — Religious-corp status table row 53
