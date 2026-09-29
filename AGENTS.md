@@ -1,4 +1,4 @@
-# com-etzhayyim-hodoki — CLAUDE.md
+# com-etzhayyim-hodoki — AGENTS.md
 
 ## Identity
 
@@ -180,4 +180,4 @@ The audit enforces EDN as canonical data, confines JSON/JSON-LD to `wire/`, and 
 - `/orgs/etzhayyim/com-etzhayyim-kanayama/README.md` — downstream metals consumer + G2 pattern inheritance
 - `/orgs/etzhayyim/com-etzhayyim-makura/README.md` — downstream seat-foam consumer + G13 invariant closure
 - `/orgs/etzhayyim/com-etzhayyim-wadachi/README.md` — vehicle build-side sibling
-- `/CLAUDE.md` — Religious-corp status table row 53
+- `/AGENTS.md` — Religious-corp status table row 53
